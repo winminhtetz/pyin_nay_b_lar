@@ -1,16 +1,7 @@
-# pyin_nay_b_lar
+# PyinNayBeLar
 
-A new Flutter project.
+Random Activity Generator
 
 ## Getting Started
 
-This project is a starting point for a Flutter application.
-
-A few resources to get you started if this is your first Flutter project:
-
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
-
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+[PyinNayBeLar](https://winminhtetz.github.io/pyinnayblar/) : your passport to spontaneous excitement! Break free from routine and discover a world of thrilling possibilities with just a click. Whether you're seeking adventure, relaxation, or creative inspiration, our app generates unique, unexpected activities tailored to your preferences. Embrace the element of surprise and let the Random Activity Generator redefine your leisure time. Elevate your moments, explore the unknown, and make every day an adventure with [PyinNayBeLar](https://winminhtetz.github.io/pyinnayblar/)!
