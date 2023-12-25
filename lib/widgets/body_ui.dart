@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:pyin_nay_b_lar/const/const_data.dart';
 import 'package:pyin_nay_b_lar/model/activity_model.dart';
 import 'package:pyin_nay_b_lar/widgets/card_ui.dart';
 import 'package:pyin_nay_b_lar/widgets/description_ui.dart';
@@ -19,26 +18,35 @@ class BodyUI extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Expanded(
-      child: Row(
-        mainAxisAlignment: MainAxisAlignment.center,
-        children: [
-          const DescriptionUI(),
-          Container(
-            width: 384,
-            padding: const EdgeInsets.only(
-              top: 126,
-            ),
-            child: Column(
+      child: SingleChildScrollView(
+        scrollDirection: Axis.horizontal,
+        child: Padding(
+          padding: const EdgeInsets.all(20.0),
+          child: SingleChildScrollView(
+            scrollDirection: Axis.vertical,
+            child: Row(
+              mainAxisAlignment: MainAxisAlignment.center,
               children: [
-                CardUI(
-                  value: value,
-                  index: index,
-                  onPressed: onPressed,
+                const DescriptionUI(),
+                Container(
+                  width: 384,
+                  padding: const EdgeInsets.only(
+                    top: 126,
+                  ),
+                  child: Column(
+                    children: [
+                      CardUI(
+                        value: value,
+                        index: index,
+                        onPressed: onPressed,
+                      ),
+                    ],
+                  ),
                 ),
               ],
             ),
           ),
-        ],
+        ),
       ),
     );
   }

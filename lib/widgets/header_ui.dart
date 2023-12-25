@@ -1,26 +1,38 @@
 import 'package:flutter/material.dart';
 
 class HeaderUI extends StatelessWidget {
-  const HeaderUI({super.key});
+  const HeaderUI({
+    super.key,
+    required this.padding,
+    required this.titlePadding,
+    required this.height,
+    required this.fontSize,
+    required this.iconSize,
+  });
+
+  final EdgeInsets padding, titlePadding;
+  final double height, fontSize, iconSize;
 
   @override
   Widget build(BuildContext context) {
     return Container(
-      padding: const EdgeInsets.symmetric(vertical: 18, horizontal: 40),
+      padding: padding,
       width: double.infinity,
-      height: 76,
-      child: const Row(
+      height: height,
+      child: Row(
+        crossAxisAlignment: CrossAxisAlignment.center,
         children: [
-          Icon(
+           Icon(
             Icons.self_improvement_sharp,
-            size: 40,
+            size: iconSize,
           ),
           Padding(
-            padding: EdgeInsets.only(left: 20),
+            padding: titlePadding,
             child: Text(
               'PyinNayBeLar',
               style: TextStyle(
-                fontSize: 25,
+                fontSize: fontSize,
+                color: Colors.black,
                 fontWeight: FontWeight.bold,
               ),
             ),

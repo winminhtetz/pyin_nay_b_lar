@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:pyin_nay_b_lar/const/const_data.dart';
+import 'package:pyin_nay_b_lar/const/const_texts.dart';
 
 class DescriptionUI extends StatelessWidget {
   const DescriptionUI({super.key});
@@ -7,16 +8,13 @@ class DescriptionUI extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Container(
-      padding: const EdgeInsets.only(
-        top: 126,
-      ),
       width: 479,
-      // color: Colors.amber,
+      padding: const EdgeInsets.only(top: 126),
       child: Column(
         crossAxisAlignment: CrossAxisAlignment.start,
         children: [
           const Text(
-            'Random Activity Generator',
+            descTitle,
             style: TextStyle(
               fontSize: 48,
               fontWeight: FontWeight.bold,
@@ -25,7 +23,7 @@ class DescriptionUI extends StatelessWidget {
           const Padding(
             padding: EdgeInsets.only(top: 20.0, bottom: 10),
             child: Text(
-              'Unleash spontaneity with PyinNayBeLar',
+              shortDesc,
               style: TextStyle(
                 fontSize: 15,
               ),
